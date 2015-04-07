@@ -42,10 +42,6 @@ namespace Engine {
 
 	void Window::update()
 	{
-		while (!glfwWindowShouldClose(this->window))
-		{
-			glfwSwapBuffers(this->window);
-			glfwPollEvents();
-		}
+
 	}
 }

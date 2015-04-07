@@ -5,22 +5,24 @@
 
 #define LOG(x) std::cout<<x<<std::endl;
 
+float x = 0.f;
+float y = 0.f;
+float z = 0.f;
+
 int main()
 {
 	using namespace Engine;
 	using namespace Vector;
 
-	Window window(640, 480, "Window");
-	Vector2 position(0, 0);
-	Vector2 destination(10, 10);
-
-	GameObject tile;
-
-	tile.transform.position = *new Vector2(10, 190);
-
-	LOG(tile.transform.position.length);
+	Window window(1080, 720, "Envision");
 
 	window.create();
+	
+	while (!glfwWindowShouldClose(window.window))
+	{
+		glfwSwapBuffers(window.window);
+		glfwPollEvents();
+	}
 
 	return 0;
 }
