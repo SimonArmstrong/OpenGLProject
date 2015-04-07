@@ -16,7 +16,9 @@ int main()
 
 	GameObject tile;
 
-	tile.transform.position = *new Vector2(10, 10);
+	tile.transform.position = *new Vector2(10, 190);
+
+	LOG(tile.transform.position.length);
 
 	window.create();
 

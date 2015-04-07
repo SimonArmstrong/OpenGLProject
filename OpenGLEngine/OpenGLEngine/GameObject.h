@@ -8,7 +8,12 @@ namespace Engine{
 		const char* name;
 		const char* tag;
 
-		GameObject(){ this->name = "null"; this->tag = "untagged"; this->transform =* new Transform(); };
+		GameObject()
+		{ 
+			this->name = "null"; 
+			this->tag = "untagged"; 
+			this->transform = *new Transform();
+		}
 		GameObject(Transform transform, const char* name, const char* tag)
 		{
 			this->transform = transform;
